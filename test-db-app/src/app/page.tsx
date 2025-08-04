@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 type FootPrint = {
   id: number
   name: string
-  messasge: string
+  message: string
   createdAt: string
 }
 
@@ -49,7 +49,7 @@ export default function HomePage() {
       <ul>
         {footprints.map(fp => (
           <li key={fp.id}>
-            <strong>{fp.name}</strong>: {fp.messasge} ({new Date(fp.createdAt).toLocaleDateString()})
+            <strong>{fp.name}</strong>: {fp.message} ({new Date(fp.createdAt).toLocaleDateString()})
           </li>
         ))}
       </ul>
